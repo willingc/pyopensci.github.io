@@ -324,3 +324,13 @@
   packages-submitted: ["phenopype"]
   packages-reviewed: [""]
   packages-editor: [""]
+- name: Carol Willing
+  bio: 'Python and Jupyter'
+  organization: "Noteable"
+  github_username: willingc
+  github_image_id: 2680980
+  contributor_type:
+    - reviewer
+  packages-submitted: [""]
+  packages-reviewed: ["devicely"]
+  packages-editor: [""]
