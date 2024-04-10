@@ -3,7 +3,7 @@
    pyos custom drop down menus
    ========================================================================== */
 
-/* replaces mm greedy_nav */
+/* replaces the stock minimal mistakes greedy_nav */
 .nav__topbar {
   position: relative;
   display: -webkit-box;
@@ -30,7 +30,6 @@
   max-height: 3rem!important;
   box-shadow: none!important;
 }
-
 
 .nav__links {
   overflow: hidden;

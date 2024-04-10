@@ -301,6 +301,7 @@ defaults:
       share: true
       related: true
       toc: true
+      sticky: true
   - scope:
       path: ""
       type: posts
@@ -311,3 +312,4 @@ defaults:
       comments: # true
       share: true
       related: true
+      sticky: true
