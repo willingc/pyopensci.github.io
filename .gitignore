@@ -10,3 +10,5 @@ all_contribs.pickle
 .vale.ini
 styles/*
 tmp/*
+node_modules/*
+package-lock.json
