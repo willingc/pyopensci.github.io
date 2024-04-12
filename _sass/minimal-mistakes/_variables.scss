@@ -1,8 +1,8 @@
 /* ==========================================================================
-   pyos Variables - breaking away from mm theme
+   pyos Variables (a combination of Minimal Mistakes and Pyos variables)
    ========================================================================== */
 
-/*
+/* ==========================================================================
    Typography
    ========================================================================== */
 
@@ -46,8 +46,6 @@ $caption-font-family: $serif !default;
 $header-font: 'Itim', cursive;
 $body-font: 'Poppins', sans-serif!default;//'Open Sans', sans-serif;
 
-
-
 /* type scale */
 $type-size-1: 2.441em !default; // ~39.056px
 $type-size-2: 1.953em !default; // ~31.248px
@@ -66,14 +64,14 @@ $h-size-4: 1.0625em !default; // ~17px
 $h-size-5: 1.03125em !default; // ~16.5px
 $h-size-6: 1em !default; // ~16px
 
-/*
+/* ==========================================================================
    Colors
    ========================================================================== */
 $nav-font-color: #3d2a46;
 $nav-hover-color: #8d0065;
 $background-block: #d6cfde;
 
-/* pyos colors */
+/* --- pyos colors --- */
 
 $pyos-darkpurple: #542668;
 $pyos-lightpurple: #e1dfed;
@@ -166,7 +164,7 @@ $base0d: #82aaff !default;
 $base0e: #c792ea !default;
 $base0f: #ff5370 !default;
 
-/*
+/* ==========================================================================
    Breakpoints
    ========================================================================== */
 
@@ -177,7 +175,7 @@ $large: 1024px !default;
 $x-large: 1280px !default;
 $max-width: $x-large !default;
 
-/*
+/* ==========================================================================
    Grid
    ========================================================================== */
 
@@ -185,7 +183,7 @@ $right-sidebar-width-narrow: 200px !default;
 $right-sidebar-width: 300px !default;
 $right-sidebar-width-wide: 400px !default;
 
-/*
+/* =
    Other
    ========================================================================== */
 

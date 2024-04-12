@@ -4,11 +4,8 @@
  * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
 */
 
-
-
 /* Variables */
 @import "minimal-mistakes/variables";
-
 
 /* Mixins and functions */
 @import "minimal-mistakes/vendor/breakpoint/breakpoint";
@@ -43,7 +40,7 @@
 @import "minimal-mistakes/print";
 
 
-/* Pyos specific  */
+/* --- Pyos specific --- */
 @import "minimal-mistakes/pyos-main";
 @import "minimal-mistakes/pyos-isotope";
 @import "minimal-mistakes/pyos-dropdown";
