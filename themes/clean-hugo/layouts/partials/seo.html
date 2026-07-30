@@ -48,7 +48,7 @@
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="og:locale" content="{{ .Site.LanguageCode | default "en_US" }}">
+<meta property="og:locale" content="{{ .Site.Language.Locale | default "en_US" }}">
 
 {{ if $image }}
 <meta property="og:image" content="{{ $image }}">
