@@ -1,7 +1,7 @@
 # pyOpenSci website (Hugo)
 
 baseURL = 'https://www.pyopensci.org/'
-languageCode = 'en-us'
+locale = 'en-US'
 title = 'pyOpenSci'
 theme = 'clean-hugo'
 timeZone = 'America/Denver'
