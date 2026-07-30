@@ -9,7 +9,7 @@
 {{ $jossCount := 0 }}
 {{ $totalCount := 0 }}
 
-{{ with .Site.Data.packages }}
+{{ with hugo.Data.packages }}
   {{ $totalCount = len . }}
   {{ range . }}
     {{ if .active }}

@@ -1,7 +1,7 @@
 {{/*
   Filter packages by community partner slug (partners or labels).
   Returns a slice via return (dict context).
-  Usage: {{ $pkgs := partial "packages/community-filter.html" (dict "community" "astropy" "packages" .Site.Data.packages) }}
+  Usage: {{ $pkgs := partial "packages/community-filter.html" (dict "community" "astropy" "packages" hugo.Data.packages) }}
 */}}
 {{- $community := .community -}}
 {{- $packages := .packages | default slice -}}

@@ -3,7 +3,7 @@
   Usage:
     {{ partial "people/lookup-contributor.html" (dict
       "username" "eliotwrobson"
-      "contributors" .Site.Data.contributors) }}
+      "contributors" hugo.Data.contributors) }}
 */}}
 {{ $username := lower .username }}
 {{ $found := dict }}

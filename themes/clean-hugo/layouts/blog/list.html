@@ -49,7 +49,7 @@
 
     {{/* Topic filters — fixed order from data/blog_topics.yml */}}
     {{ $topicOrder := slice "community" "learn" "software" "updates" }}
-    {{ $topicsData := .Site.Data.blog_topics | default dict }}
+    {{ $topicsData := hugo.Data.blog_topics | default dict }}
     <div class="filter-row blog-grid__filters" role="group" aria-label="Filter blog posts by topic">
       <button type="button" class="filter-btn" data-category="all" aria-pressed="true" aria-label="View all blog posts">View All</button>
       {{ range $topicOrder }}

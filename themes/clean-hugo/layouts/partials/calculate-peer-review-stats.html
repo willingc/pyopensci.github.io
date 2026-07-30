@@ -12,11 +12,11 @@
 */}}
 {{ $pkgStats := partial "calculate-package-stats.html" . }}
 
-{{ $board := index .Site.Data "editorial-board" | default dict }}
+{{ $board := index hugo.Data "editorial-board" | default dict }}
 {{ $editorCount := len $board }}
 
 {{ $reviewerCount := 0 }}
-{{ range .Site.Data.contributors | default slice }}
+{{ range hugo.Data.contributors | default slice }}
   {{ $hasReviewed := gt (len (.packages_reviewed | default slice)) 0 }}
   {{ $isReviewer := in (.contributor_type | default slice) "reviewer" }}
   {{ if or $hasReviewed $isReviewer }}

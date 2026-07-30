@@ -2,7 +2,7 @@
   Tutorial grid — packaging tutorials from data/tutorials.yml
   Usage: {{< tutorial-grid />}}
 */}}
-{{ $tutorials := sort .Site.Data.tutorials "order" "asc" }}
+{{ $tutorials := sort hugo.Data.tutorials "order" "asc" }}
 {{ if gt (len $tutorials) 0 }}
 <div class="tutorial-grid">
   {{ range $tutorials }}

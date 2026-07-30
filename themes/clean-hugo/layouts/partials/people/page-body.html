@@ -6,11 +6,11 @@
   </div>
 </div>
 
-{{ if .Site.Data.contributors }}
-<script>window.pyOpenSciContributors = {{ .Site.Data.contributors | jsonify | safeJS }};</script>
+{{ if hugo.Data.contributors }}
+<script>window.pyOpenSciContributors = {{ hugo.Data.contributors | jsonify | safeJS }};</script>
 <div x-data="peopleFilter()" x-init="initPeople(window.pyOpenSciContributors)">
 
-  {{ $board := where .Site.Data.contributors "board" true }}
+  {{ $board := where hugo.Data.contributors "board" true }}
   {{ if $board }}
     <section class="people-page__section">
       <div class="container">
@@ -24,7 +24,7 @@
     </section>
   {{ end }}
 
-  {{ $advisory := where .Site.Data.contributors "advisory" true }}
+  {{ $advisory := where hugo.Data.contributors "advisory" true }}
   {{ if $advisory }}
     <section class="people-page__section">
       <div class="container">
@@ -40,7 +40,7 @@
   {{ end }}
 
 
-  {{ $totalPeople := len .Site.Data.contributors }}
+  {{ $totalPeople := len hugo.Data.contributors }}
   <section class="people-page__section">
     <div class="container">
       <h2>Community Contributors</h2>
@@ -56,7 +56,7 @@
     </div>
   </section>
 
-  {{ $emeritus := where .Site.Data.contributors "emeritus_advisory" true }}
+  {{ $emeritus := where hugo.Data.contributors "emeritus_advisory" true }}
   {{ if $emeritus }}
     <section class="people-page__section full-width bg-primary">
       <div class="container py-12">

@@ -3,7 +3,7 @@
 {{ $community := .Params.community | default "astropy" }}
 {{ $communityPackages := partial "packages/community-filter.html" (dict
     "community" $community
-    "packages" .Site.Data.packages
+    "packages" hugo.Data.packages
 ) }}
 
 {{ partial "section-hero.html" . }}

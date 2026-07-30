@@ -3,10 +3,10 @@
   Usage: {{< recent-contributors >}} or {{< recent-contributors limit="5" >}}
 */}}
 {{ $limit := .Get "limit" | default 3 | int }}
-{{ $contributors := where (.Site.Data.contributors | default slice) "date_added" "gt" "1970-01-01" }}
+{{ $contributors := where (hugo.Data.contributors | default slice) "date_added" "gt" "1970-01-01" }}
 {{ $sorted := sort $contributors "date_added" "desc" }}
 {{ $recent := first $limit $sorted }}
-{{ $total := len (.Site.Data.contributors | default slice) }}
+{{ $total := len (hugo.Data.contributors | default slice) }}
 
 <p>
   pyOpenSci has a diverse and vibrant community of pythonistas! To date,
