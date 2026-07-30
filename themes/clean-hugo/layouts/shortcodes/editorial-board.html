@@ -5,9 +5,9 @@
        {{< editorial-board section="emeritus" >}} — emeritus only
 */}}
 {{ $section := .Get "section" | default "all" }}
-{{ $board := index .Page.Site.Data "editorial-board" }}
-{{ $emeritus := index .Page.Site.Data "emeritus-editors" }}
-{{ $contributors := .Page.Site.Data.contributors | default slice }}
+{{ $board := index hugo.Data "editorial-board" }}
+{{ $emeritus := index hugo.Data "emeritus-editors" }}
+{{ $contributors := hugo.Data.contributors | default slice }}
 {{ $showActive := or (eq $section "all") (eq $section "active") }}
 {{ $showEmeritus := or (eq $section "all") (eq $section "emeritus") }}
 

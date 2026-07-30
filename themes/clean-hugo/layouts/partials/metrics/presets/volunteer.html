@@ -4,7 +4,7 @@
 {{ $ctx := .context }}
 {{ $scratch := .scratch }}
 {{ $pkgStats := partial "calculate-package-stats.html" $ctx }}
-{{ $contributors := len ($ctx.Site.Data.contributors | default slice) }}
+{{ $contributors := len (hugo.Data.contributors | default slice) }}
 {{ $scratch.Set "stats" (slice
     (printf "**%d** contributors" $contributors)
     (printf "**%d** maintainers" $pkgStats.maintainers)
